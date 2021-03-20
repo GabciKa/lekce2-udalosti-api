@@ -10,16 +10,30 @@
 <body>
 
 	<h1>Změna tříd, události</h1>
+	
+	<p onmouseover="tucny()" onmouseout="noBold()">V elipse spí lev.</p>
 
-	<div class="ctverecek zluty"></div>
+	<button onclick="cerveny()">Červený po kliknutí</button>
+	<button onclick="vetsiPismo()">Větší po kliknutí</button>
 
-	<div class="ctverecek zeleny"></div>
+	<div class="ctverecek zluty" onmouseover="secti(4,5); vypis(10,12)" ></div>
+
+	<div class="ctverecek zeleny" onmouseover="console.log('zelena')"></div>
 
 	<img class="obrazek" src="obrazky/kocka.jpg">
 
 	<button class="tlacitko">Čudlajs</button>
 
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
+	<audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
+
+	<button onclick="prehraj('#js-audio')">Přehraj písničku</button>
+	<button onclick="zastav('#js-audio')">Zastav písničku</button>
+	<button onclick="ztisit('#js-audio')">Ztišit</button>
+	<button onclick="hlasitostNormal('#js-audio')">Hlasitost normální</button>
+	<button onclick="naPlnyPecky('#js-audio')">Nahlas</button>
+	<button onclick="opakovat('#js-audio')">Opakovat</button>
+
+	<script src="main.js"></script>
 
 </body>
 </html>
