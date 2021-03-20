@@ -1,19 +1,4 @@
 // tady je místo pro náš program
-let nadpis;
-nadpis = document.querySelector("h1");
-
-// nadpis.classList.add("zluty");
-// nadpis.classList.remove("zluty");
-
-nadpis.classList.toggle("zluty");
-
-function secti(a, b) {
-    console.log(a + b); // vypíše při najetí na žlutý čtverec součet a + b
-}   
-
-function vypis(a,b) {
-    nadpis.innerHTML = a + b; //změní obsah nadpisu na výsledek a+b
-}
 
 let palindrom = document.querySelector("p");
 function tucny () {
